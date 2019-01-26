@@ -1,62 +1,6 @@
-//-----------------------------------------------------------------------------
-// FONTS
-//-----------------------------------------------------------------------------
-@font-face {
-    font-family: 'Loew-Light';
-    src: url('../fonts/loew/light/Loew-Light.eot');
-    src: url('../fonts/loew/light/Loew-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/loew/light/Loew-Light.woff2') format('woff2'),
-        url('../fonts/loew/light/Loew-Light.woff') format('woff'),
-        url('../fonts/loew/light/Loew-Light.ttf') format('truetype'),
-        url('../fonts/loew/light/Loew-Light.svg#Loew-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Loew-Regular';
-    src: url('../fonts/loew/regular/Loew-Regular.eot');
-    src: url('../fonts/loew/regular/Loew-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/loew/regular/Loew-Regular.woff2') format('woff2'),
-        url('../fonts/loew/regular/Loew-Regular.woff') format('woff'),
-        url('../fonts/loew/regular/Loew-Regular.ttf') format('truetype'),
-        url('../fonts/loew/regular/Loew-Regular.svg#Loew-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Loew-Bold';
-    src: url('../fonts/loew/bold/Loew-Bold.eot');
-    src: url('../fonts/loew/bold/Loew-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/loew/bold/Loew-Bold.woff2') format('woff2'),
-        url('../fonts/loew/bold/Loew-Bold.woff') format('woff'),
-        url('../fonts/loew/bold/Loew-Bold.ttf') format('truetype'),
-        url('../fonts/loew/bold/Loew-Bold.svg#Loew-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Loew-ExtraBold';
-    src: url('../fonts/loew/extrabold/Loew-ExtraBold.eot');
-    src: url('../fonts/loew/extrabold/Loew-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/loew/extrabold/Loew-ExtraBold.woff2') format('woff2'),
-        url('../fonts/loew/extrabold/Loew-ExtraBold.woff') format('woff'),
-        url('../fonts/loew/extrabold/Loew-ExtraBold.ttf') format('truetype'),
-        url('../fonts/loew/extrabold/Loew-ExtraBold.svg#Loew-ExtraBold') format('svg');
-    font-weight: 800;
-    font-style: normal;
-}
-
-
-
-
-//-----------------------------------------------------------------------------
-// INDEX OF BASE
-//-----------------------------------------------------------------------------
 @import 'base/_Reset';
 @import 'base/_Mixins';
 @import 'base/_Variables';
 @import 'base/_Styles';
 @import 'base/_Grid';
+@import 'base/_Fonts';

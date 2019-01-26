@@ -1,4 +1,4 @@
-//-----------------------------------------------------------------------------
+//-----------------------------------------------------------
 // INDEX OF ANIMATIONS
 // This is a port of Den Eden's Animate.css, converted for SASS.
 // Source: https://daneden.me/animate/
@@ -7,7 +7,7 @@
 // Comment out categories below to remove them from your project.
 // Or, @import specific partials (e.g. @import "_attention/_bounce.scss";
 //
-//-----------------------------------------------------------------------
+//-----------------------------------------------------------
 
 // Always required
 @import 'animations/_properties';
@@ -120,14 +120,12 @@
 //-----------------------------------------------------------------------------
 // ANIMATIONS
 //-----------------------------------------------------------------------------
-/*
-.your-class-name {
-    @include bounceIn(
-        $duration: 5s,
-        $count: 2,
-        $delay: .2s,
-        $function: ease,
-        $fill: both
-    );
-}
-*/
+// .your-class-name {
+//   @include bounceIn(
+//    $duration: 5s,
+//    $count: 2,
+//    $delay: .2s,
+//    $function: ease,
+//    $fill: both
+//  ;
+// }
