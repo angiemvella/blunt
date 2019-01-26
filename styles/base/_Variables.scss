@@ -1,0 +1,27 @@
+//-----------------------------------------------------------------------------
+/* VARIABLES */
+//-----------------------------------------------------------------------------
+
+// Colors
+$dark-color: #04171F;
+$light-color: #FFFFFF;
+$accent-color: #D02746;
+
+// Fonts
+$primary-font-light: 'Loew-Light', Helvetica, Arial, sans-serif;
+$primary-font-regular: 'Loew-Regular', Helvetica, Arial, sans-serif;
+$primary-font-bold: 'Loew-Bold', Helvetica, Arial, sans-serif;
+$primary-font-extra: 'Loew-ExtraBold', Helvetica, Arial, sans-serif;
+
+// Misc
+$max-width: 1170px;
+$margin-auto: 0 auto;
+$spacing-tb: 50px 0;
+$spacing-lr: 0 50px;
+
+// Media Queries
+$larger-than-mobile: 400px;
+$larger-than-phablet: 550px;
+$larger-than-tablet: 750px;
+$larger-than-desktop: 1000px;
+$larger-than-desktop-HD: 1200px;

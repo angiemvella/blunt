@@ -1,0 +1,563 @@
+//-----------------------------------------------------------------------------
+/* BASE */
+//-----------------------------------------------------------------------------
+html {
+	@include box-sizing(border-box);
+	font-size: 100%;
+}
+
+body {
+	background-color: $dark-color;
+	color: $light-color;
+	font-family: $primary-font-regular;
+	@include font-size(16px);
+	line-height: 1.7;
+}
+
+*,
+*:after,
+*:before {
+	@include box-sizing(inherit);
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* BLOCKQUOTE */
+//-----------------------------------------------------------------------------
+
+blockquote {
+	border-left: 4px solid $dark-color;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 1rem 1.5rem;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* BUTTONS */
+//-----------------------------------------------------------------------------
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	width: 100%;
+	height: 50px;
+	padding: 0;
+
+	background-color: $accent-color;
+	border: none;
+	outline: none;
+
+	color: $light-color;
+
+	font-family: $primary-font-bold;
+	@include font-size(14px);
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 14px;
+	cursor: pointer;
+	@include transition (all 0.2s ease);
+
+	&:hover,
+	&:focus {
+		background-color: $light-color;
+		color: $accent-color;
+	}
+
+	&.button-alt {
+		width: 200px;
+		background-color: $light-color;
+		color: $dark-color;
+		border-color: $light-color;
+
+		&:hover,
+		&:focus {
+			background-color: $accent-color;
+		}
+	}
+
+	&.button-outline {
+		background-color: transparent;
+		color: $dark-color;
+
+		&:hover,
+		&:focus {
+			border: 1px solid $dark-color;
+			background-color: $dark-color;
+			color: #000000;
+		}
+	}
+
+	&.button-clear {
+		background-color: transparent;
+		border-color: transparent;
+		color: $dark-color;
+	}
+
+	&[disabled],
+	&.button-disabled {
+		@include opacity(0.5);
+		cursor: default;
+
+		&:hover,
+		&:focus {
+			background-color: $dark-color;
+			border: 1px solid $dark-color;
+		}
+	}
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* DIVIDER */
+//-----------------------------------------------------------------------------
+
+hr {
+	margin: 40px 0;
+	border-width: 0;
+	border-top: 1px solid $dark-color;
+}
+
+
+
+
+
+//-----------------------------------------------------------------------------
+/* FORMS */
+//-----------------------------------------------------------------------------
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+	@include appearance(none); // removes default styles on some iOS inputs
+
+	width: 100%;
+	height: 50px;
+	margin-bottom: 40px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid $light-color;
+	color: $accent-color;
+	outline: none;
+
+	@include box-sizing(inherit);
+
+	font-family: $primary-font-regular;
+	@include font-size(16px);
+	@include transition (all 0.2s ease);
+
+	&:focus {
+		border-bottom: 1px solid $accent-color;
+	}
+
+	&.input-alt {
+		padding: 0 20px;
+		border: 1px solid $light-color;
+
+		&:focus {
+			border: 1px solid $accent-color;
+		}
+	}
+}
+
+textarea {
+	padding: 10px 0;
+	resize: none;
+}
+
+select {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+	padding-right: 40px;
+
+	&:focus {
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+	}
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	display: inline;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+label, legend {
+	display: block;
+	@include font-size(16px);
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.label-inline {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+
+
+// SELECT - HTML in Components
+.select-wrapper {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid $dark-color;
+    @include border-radius(4px);
+    background-color: $light-color;
+    background: $light-color url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+    overflow: hidden;
+
+    select {
+        width: 130%;
+        margin: 0;
+        padding: 5px 8px;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        background-image: none;
+        @include appearance(none);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+// CHECKBOX - HTML in Components
+.checkbox {
+    position: relative;
+    @include opacity(0);
+
+    & + .checkbox-label:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        padding: 2px;
+        border: 2px solid $dark-color;
+        background: $light-color;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    &:checked + .checkbox-label:before {
+        width: 20px;
+        height: 20px;
+        font-family: 'FontAwesome';
+        content: "\f00c";
+        background: $dark-color;
+        color: $light-color;
+		@include font-size(10px);
+        line-height: 12px;
+    }
+
+    &:focus + .checkbox-label {
+        outline: 1px solid $dark-color;
+    }
+}
+
+.checkbox-label {
+    position: relative;
+	left: -28px;
+}
+
+.checkbox, .checkbox-label {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+// RADIO BUTTON - HTML in Components
+.radiobutton {
+    position: absolute;
+    @include opacity(0);
+
+    & + .radiobutton-label:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        padding: 2px;
+        border: 2px solid $dark-color;
+        background: $light-color;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    & + .radiobutton-label:before {
+        @include border-radius(50%);
+    }
+
+    &:checked + .radiobutton-label:before {
+        width: 20px;
+        height: 20px;
+        font-family: 'FontAwesome';
+        content: "\f00c";
+		background: $dark-color;
+        color: $light-color;
+		@include font-size(10px);
+        line-height: 12px;
+    }
+
+    &:focus + .radiobutton-label {
+        outline: 1px solid $dark-color;
+    }
+}
+
+.radiobutton-label {
+    position: relative;
+}
+
+.radiobutton, .radiobutton-label {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* IMAGES */
+//-----------------------------------------------------------------------------
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* LINKS */
+//-----------------------------------------------------------------------------
+
+a {
+	color: $accent-color;
+	outline: none;
+	text-decoration: none;
+	@include transition (all 0.2s ease);
+
+	&:hover,
+	&:focus {
+		color: $light-color;
+	}
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* LISTS */
+//-----------------------------------------------------------------------------
+dl,
+ol,
+ul {
+	padding-left: 0;
+	margin-top: 0;
+
+	dl,
+	ol,
+	ul {
+		font-size: 90%;
+		margin: 24px 0 24px 48px;
+	}
+}
+
+ul {
+	list-style: circle inside;
+}
+
+ol {
+	list-style: decimal inside;
+}
+
+li {
+	display: inline-block;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* SELECTION */
+//-----------------------------------------------------------------------------
+
+::-moz-selection {
+	background-color: $accent-color;
+}
+
+::selection {
+	background-color: $accent-color;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* TABLES */
+//-----------------------------------------------------------------------------
+
+table {
+	width: 100%;
+}
+
+th,
+td {
+	border-bottom: 1px solid $dark-color;
+	padding: 20px 24px;
+	text-align: left;
+
+	&:first-child {
+		padding-left: 0;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* TYPOGRAPHY */
+//-----------------------------------------------------------------------------
+p {
+	margin-top: 0;
+}
+
+h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 300;
+	letter-spacing: -0.1rem;
+}
+
+h2 {
+	margin-bottom: 20px;
+	font-family: $primary-font-extra;
+	@include font-size(48px);
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+h3 {
+	margin-bottom: 20px;
+	font-family: $primary-font-extra;
+	@include font-size(36px);
+	text-transform: uppercase;
+	line-height: 1.3;
+
+	span {
+		text-decoration: line-through;
+	}
+}
+
+h4 {
+	color: rgba($light-color, 0.5);
+	font-family: $primary-font-bold;
+	@include font-size(14px);
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	//line-height: 1.35;
+}
+
+h5 {
+	font-family: $primary-font-bold;
+	@include font-size(16px);
+	letter-spacing: 1px;
+}
+
+h6 {
+}
+
+@media (min-width: 640px) {
+	/*h1 {
+		font-size: 5.0rem;
+	}
+
+	h2 {
+		font-size: 4.2rem;
+	}
+
+	h3 {
+		font-size: 3.6rem;
+	}
+
+	h4 {
+		font-size: 3.0rem;
+	}
+
+	h5 {
+		font-size: 2.4rem;
+	}
+
+	h6 {
+		font-size: 1.5rem;
+	}*/
+}
+
+em {
+
+}
+
+small {
+
+}
+
+strong {
+
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+/* UTILITIES */
+//-----------------------------------------------------------------------------
+
+.clearfix {
+	clear: both;
+}
+
+.float-left {
+	float: left
+}
+
+.float-right {
+	float: right
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
