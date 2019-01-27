@@ -1522,33 +1522,31 @@ h6 { font-family: "Loew-Light", Helvetica, Arial, sans-serif; font-size: 16px; f
 
 .grid.justify-around { -moz-justify-content: space-around; justify-content: space-around; }
 
-.cell { box-sizing: border-box; flex-shrink: 0; }
+.cell.fill { width: 0; min-width: 0; -moz-flex-grow: 1; flex-grow: 1; }
 
-.cell .fill { width: 0; min-width: 0; -moz-flex-grow: 1; flex-grow: 1; }
+.cell.cell-one { width: calc(100% * 1 / 12); }
 
-.cell .cell-one { width: calc(100% * 1 / 12); }
+.cell.cell-two { width: calc(100% * 2 / 12); }
 
-.cell .cell-two { width: calc(100% * 2 / 12); }
+.cell.cell-three { width: calc(100% * 3 / 12); }
 
-.cell .cell-three { width: calc(100% * 3 / 12); }
+.cell.cell-four { width: calc(100% * 4 / 12); }
 
-.cell .cell-four { width: calc(100% * 4 / 12); }
+.cell.cell-five { width: calc(100% * 5 / 12); }
 
-.cell .cell-five { width: calc(100% * 5 / 12); }
+.cell.cell-six { width: calc(100% * 6 / 12); }
 
-.cell .cell-six { width: calc(100% * 6 / 12); }
+.cell.cell-seven { width: calc(100% * 7 / 12); }
 
-.cell .cell-seven { width: calc(100% * 7 / 12); }
+.cell.cell-eight { width: calc(100% * 8 / 12); }
 
-.cell .cell-eight { width: calc(100% * 8 / 12); }
+.cell.cell-nine { width: calc(100% * 9 / 12); }
 
-.cell .cell-nine { width: calc(100% * 9 / 12); }
+.cell.cell-ten { width: calc(100% * 10 / 12); }
 
-.cell .cell-ten { width: calc(100% * 10 / 12); }
+.cell.cell-eleven { width: calc(100% * 11 / 12); }
 
-.cell .cell-eleven { width: calc(100% * 11 / 12); }
-
-.cell .cell-twelve { width: 100%; }
+.cell.cell-twelve { width: 100%; }
 
 @font-face { font-family: 'Loew-Light'; src: url("../../fonts/loew/light/Loew-Light.eot"); src: url("../../fonts/loew/light/Loew-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/loew/light/Loew-Light.woff2") format("woff2"), url("../../fonts/loew/light/Loew-Light.woff") format("woff"), url("../../fonts/loew/light/Loew-Light.ttf") format("truetype"), url("../../fonts/loew/light/Loew-Light.svg#Loew-Light") format("svg"); font-weight: 300; font-style: normal; }
 

@@ -13,11 +13,23 @@ $primary-font-regular: 'Loew-Regular', Helvetica, Arial, sans-serif;
 $primary-font-bold: 'Loew-Bold', Helvetica, Arial, sans-serif;
 $primary-font-extra: 'Loew-ExtraBold', Helvetica, Arial, sans-serif;
 
-// Misc
+// Layout
 $max-width: 1170px;
 $margin-auto: 0 auto;
-$spacing-tb: 50px 0;
-$spacing-lr: 0 50px;
+
+// Spacing
+$spacing-1: 8px;
+$spacing-2: 16px;
+$spacing-3: 24px;
+$spacing-4: 32px;
+$spacing-5: 40px;
+$spacing-6: 48px;
+$spacing-7: 56px;
+$spacing-8: 64px;
+$spacing-9: 72px;
+$spacing-10: 80px;
+$spacing-11: 88px;
+$spacing-12: 96px;
 
 // Media Queries
 $larger-than-mobile: 400px;

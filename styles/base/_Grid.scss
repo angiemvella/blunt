@@ -47,60 +47,60 @@
 }
 
 .cell {
-  @include box-sizing(border-box);
-  @include flex-shrink(0);
+  //@include box-sizing(border-box);
+  //@include flex-shrink(0);
 
-  .fill { // Set item width to left
+  &.fill { // Set item width to left
     width: 0;
     min-width: 0;
     @include flex-grow(1)
   }
 
-  .cell-one {
+  &.cell-one {
     width: calc(100% * 1 / 12);
   }
 
-  .cell-two {
+  &.cell-two {
     width: calc(100% * 2 / 12);
   }
 
-  .cell-three {
+  &.cell-three {
     width: calc(100% * 3 / 12);
   }
 
-  .cell-four {
+  &.cell-four {
     width: calc(100% * 4 / 12);
   }
 
-  .cell-five {
+  &.cell-five {
     width: calc(100% * 5 / 12);
   }
 
-  .cell-six {
+  &.cell-six {
     width: calc(100% * 6 / 12);
   }
 
-  .cell-seven {
+  &.cell-seven {
     width: calc(100% * 7 / 12);
   }
 
-  .cell-eight {
+  &.cell-eight {
     width: calc(100% * 8 / 12);
   }
 
-  .cell-nine {
+  &.cell-nine {
     width: calc(100% * 9 / 12);
   }
 
-  .cell-ten {
+  &.cell-ten {
     width: calc(100% * 10 / 12);
   }
 
-  .cell-eleven {
+  &.cell-eleven {
     width: calc(100% * 11 / 12);
   }
 
-  .cell-twelve {
+  &.cell-twelve {
     width: 100%;
   }
 }
