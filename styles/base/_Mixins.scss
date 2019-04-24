@@ -3,7 +3,6 @@
 //-----------------------------------------------------------
 // CSS3
 //-----------------------------------------------------------
-
 // Appereance
 @mixin appearance($value) {
 	-webkit-appearance: $value;
@@ -300,4 +299,4 @@
 		}
 	}
 }
- // Usage: @include placeholder { color: red; }
+// Usage: @include placeholder { color: red; }
