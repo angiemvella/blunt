@@ -1,6 +1,13 @@
 //-----------------------------------------------------------
 // VARIABLES
 //-----------------------------------------------------------
+
+// Base
+$base-size: 16;
+$base-font-size: size(16);
+$small-font-size: size(14);
+$smaller-font-size: size(12);
+
 // Colors
 $dark-color: #04171F;
 $light-color: #FFFFFF;
@@ -13,26 +20,25 @@ $primary-font-bold: 'Loew-Bold', Helvetica, Arial, sans-serif;
 $primary-font-extra: 'Loew-ExtraBold', Helvetica, Arial, sans-serif;
 
 // Layout
-$max-width: 1170px;
+$max-width: size(1170);
 $margin-auto: 0 auto;
 
-// Spacing
-$spacing-1: 8px;
-$spacing-2: 16px;
-$spacing-3: 24px;
-$spacing-4: 32px;
-$spacing-5: 40px;
-$spacing-6: 48px;
-$spacing-7: 56px;
-$spacing-8: 64px;
-$spacing-9: 72px;
-$spacing-10: 80px;
-$spacing-11: 88px;
-$spacing-12: 96px;
+// Breakpoints
+$breakpoint-1: size(640);
+$breakpoint-2: size(768);
+$breakpoint-3: size(1024);
+$breakpoint-4: size(1280);
 
-// Media Queries
-$larger-than-mobile: 400px;
-$larger-than-phablet: 550px;
-$larger-than-tablet: 750px;
-$larger-than-desktop: 1000px;
-$larger-than-desktop-HD: 1200px;
+// Spacing
+$spacing-8: size(8);
+$spacing-16: size(16);
+$spacing-24: size(24);
+$spacing-32: size(32);
+$spacing-40: size(40);
+$spacing-48: size(48);
+$spacing-56: size(56);
+$spacing-64: size(64);
+$spacing-72: size(72);
+$spacing-80: size(80);
+$spacing-88: size(88);
+$spacing-96: size(96);

@@ -2,14 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Blunt</title>
-		<meta name="description" content="">
+		<title>[ENTER BRAND NAME]</title>
+		<meta name="description" content="[ENTER DESCRIPTION]">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 
-		<link rel="canonical" href="">
+		<link rel="canonical" href="[ENTER BASE URL]">
 
 		<!-- FAVICON/TOUCH ICONS -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,47 +20,55 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<!-- STYLESHEETS -->
-		<link rel="stylesheet" href="styles/flow.css">
-
-		<!--[if lt IE 9]>
-			<script src="scripts/html5shiv.min.js"></script>
-			<script src="scripts/respond.min.js"></script>
-		<![endif]-->
+		<link rel="stylesheet" href="styles/blunt.css">
 
 		<!-- FACEBOOK OPEN GRAPH -->
-		<meta property="og:title" content="ScopeShare">
-		<meta property="og:url" content="http://scopeshare.com">
-		<meta property="og:site_name" content="ScopeShare">
-		<meta property="og:description" content="A new paradigm for Astronomical Research and Photography - a brand new platform for Sharing, Learning and Discovering our great Cosmos, all while monetizing your own telescope!">
+		<meta property="og:title" content="[ENTER BRAND NAME]">
+		<meta property="og:url" content="[ENTER BASE URL]">
+		<meta property="og:site_name" content="[ENTER SITE NAME]">
+		<meta property="og:description" content="[ENTER DESCRIPTION]">
 		<meta property="og:type" content="website">
-		<meta property="og:image" content="images/scopeshare.jpg">
-
-		<!-- TWITTER - NEEDS VALIDATION -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@GetScopeShare">
-		<meta name="twitter:creator" content="@GetScopeShare">
-		<meta name="twitter:title" content="ScopeShare">
-		<meta name="twitter:description" content="A new paradigm for Astronomical Research and Photography - a brand new platform for Sharing, Learning and Discovering our great Cosmos, all while monetizing your own telescope!">
-		<meta name="twitter:image" content="images/scopeshare.jpg">
-
-		<!-- GOOGLE+ - Author = Personal link / Publisher = Business link -->
-		<link rel="author" href="">
-		<link rel="publisher" href="">
+		<meta property="og:image" content="images/[ENTER IMAGE NAME].jpg">
 	</head>
 
 	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+		<div class="main-container">
+
+			<header role="banner" id="top">
+				<nav role="navigation">
+
+				</nav>
+
+				<div class="intro">
+
+				</div>
+			</header>
+
+			<main role="main">
+				<section role="section" class="">
+
+				</section>
+			</main>
+
+			<footer role="contentinfo">
+				&#169;<script type="text/javascript">document.write(new Date().getFullYear());</script> [ENTER BRAND]. All Rights Reserved.
+			</footer>
+		</div>
 
 		<!-- SCRIPTS -->
-		<script src="scripts/vendor/jquery-3.3.1.min.js"></script>
+		<script src="scripts/vendor/jquery-3.4.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
 
-		<script>
-			$(document).on('click', 'a[href^="#"]', function (event) {
-				event.preventDefault();
-
-				$('html, body').animate({
-					scrollTop: $($.attr(this, 'href')).offset().top
-				}, 500);
-			});
-		</script>
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	  <script>
+	    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+	    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+	  </script>
+	  <script src="https://www.google-analytics.com/analytics.js" async></script>
 	</body>
 </html>
