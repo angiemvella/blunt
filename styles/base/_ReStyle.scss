@@ -42,9 +42,9 @@ input[type='submit'] {
 	display: inline-block;
 	height: $spacing-56;
 
-	background-color: $accent-color;
+	background-color: $accent-red-color;
 	@include border-radius(size(4));
-	border: size(1) solid $accent-color;
+	border: size(1) solid $accent-red-color;
 	color: $light-color;
 
 	font-family: $primary-font-bold;
@@ -61,7 +61,7 @@ input[type='submit'] {
 	&:focus {
 		background-color: $light-color;
 		border-color: $light-color;
-		color: $accent-color;
+		color: $accent-red-color;
 		outline: 0;
 	}
 
@@ -71,8 +71,8 @@ input[type='submit'] {
 
 		&:focus,
 		&:hover {
-			background-color: $accent-color;
-			border-color: $accent-color;
+			background-color: $accent-red-color;
+			border-color: $accent-red-color;
 		}
 	}
 
@@ -106,7 +106,7 @@ input[type='submit'] {
 		&:hover {
 			background-color: transparent;
 			border-color: transparent;
-			color: $accent-color;
+			color: $accent-red-color;
 		}
 
 		&[disabled] {
@@ -133,7 +133,7 @@ code {
 
 pre {
 	background-color: $dark-color;
-	border-left: size(4) solid $accent-color;
+	border-left: size(4) solid $accent-red-color;
 	overflow-y: hidden;
 
 	& > code {
@@ -191,7 +191,7 @@ select {
 	@include transition (all 0.2s ease);
 
 	&:focus {
-		border-color: $accent-color;
+		border-color: $accent-red-color;
 		outline: 0;
 	}
 }
@@ -249,7 +249,7 @@ img {
 // LINKS
 //-----------------------------------------------------------
 a {
-	color: $accent-color;
+	color: $accent-red-color;
 	outline: none;
 	text-decoration: none;
 	@include transition (all 0.2s ease);
@@ -292,11 +292,11 @@ ol {
 // SELECTION
 //-----------------------------------------------------------
 ::-moz-selection {
-	background-color: $accent-color;
+	background-color: $accent-red-color;
 }
 
 ::selection {
-	background-color: $accent-color;
+	background-color: $accent-red-color;
 }
 
 
@@ -426,14 +426,14 @@ small {
 }
 
 mark {
-	background-color: $accent-color;
+	background-color: $accent-red-color;
 	color: $light-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: $spacing-32;
-	font-family: $primary-font-extra;
+	font-family: $primary-font-bold;
 	font-weight: 300;
 	letter-spacing: size(-1);
 }

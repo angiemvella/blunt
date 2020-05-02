@@ -186,7 +186,7 @@ blockquote { border-left: 0.25rem solid #04171F; margin-left: 0; margin-right: 0
 
 blockquote *:last-child { margin-bottom: 0; }
 
-.button, button, input[type='button'], input[type='reset'], input[type='submit'] { padding: 0 1rem; display: inline-block; height: 3.5rem; background-color: #D02746; border-radius: 0.25rem; border: 0.0625rem solid #D02746; color: #FFFFFF; font-family: "Loew-Bold", Helvetica, Arial, sans-serif; font-size: 1rem; text-align: center; text-transform: uppercase; cursor: pointer; white-space: nowrap; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] { padding: 0 1rem; display: inline-block; height: 3.5rem; background-color: #D02746; border-radius: 0.25rem; border: 0.0625rem solid #D02746; color: #FFFFFF; font-family: "Loew-ExtraBold", Helvetica, Arial, sans-serif; font-size: 1rem; text-align: center; text-transform: uppercase; cursor: pointer; white-space: nowrap; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 
 .button:hover, .button:focus, button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='reset']:hover, input[type='reset']:focus, input[type='submit']:hover, input[type='submit']:focus { background-color: #FFFFFF; border-color: #FFFFFF; color: #D02746; outline: 0; }
 
